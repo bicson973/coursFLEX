@@ -1,0 +1,66 @@
+/* Feuille de style flex - Bicson */
+
+body {
+    background-color: rgb(117, 223, 255);
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 400px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.or {
+    background-color: gold;
+}
+
+.argent {
+    background-color: gainsboro;
+}
+
+.vert {
+    background-color: greenyellow;
+}
+
+.rose {
+    background-color: pink;
+}
+
+/* Le Flex */
+
+.flex { 
+    display: flex; /* Le parent est display flex */
+    width: 600px; /* si le parent est trop petit les div s'adaptent à la largeur du parent, ils vont rentrer quoi qu'il arrive */
+    height: 800px;
+    margin: 0 auto;
+    /* flex-wrap: wrap; Si on a flew-wrap; wrap la largeur des enfants est respectée le 4ème élément va à la ligne */
+    /* flex-wrap: wrap-reverse; Si on utilise flex-wrap: reverse; le dernier élément qui ne rentre pas dans le parent passe en premier */
+    /* flex-wrap: nowrap; Le comportement normal ou par défaut on force l'alignement et le redimenssionnement des éléments */
+    background-color: wheat;
+    justify-content: space-evenly; 
+    /* Justification des éléments avec justify-content ; flex-star = par défault, flex-end = à la fin, center = au centre, space between = entre les éléments */
+    align-items: center; /* autre propriété la hauteur align-items ; stretch valeur par défaut */
+}
+
+.flex div { /* Toutes les div dans la div parente qui est flex ont une largeur définie */
+    width: 100px;
+    border: 1px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.t-cap {
+   text-transform: uppercase; 
+}

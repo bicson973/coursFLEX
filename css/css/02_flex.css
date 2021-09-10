@@ -1,0 +1,48 @@
+/* Feuille de style 02_flex - Bicson */
+
+body {
+    background-color: rgb(25, 182, 235);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 500px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.or {
+    background-color: rgb(245, 219, 75);
+}
+
+.argent {
+    background-color: rgb(228, 227, 222);
+}
+
+.vert {
+    background-color: rgb(200, 245, 75);
+}
+
+.rose {
+    background-color: rgb(238, 184, 184);
+}
+
+/* flex  */
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: pink;
+    row-gap: 25px;
+}
+
+.flex div {
+    text-align: justify;  
+    width: 600px;  
+}
