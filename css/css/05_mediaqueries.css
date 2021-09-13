@@ -1,16 +1,14 @@
-/* Feuille de style 04_flex - Bicson */
+/* Feuille de style Flex Médiaqueries responsive - Bicson */
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(255, 234, 196);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.1em;
-    color: #333;
-    text-align: justify;
+    background-color: #fff;
 }
+
+/* Couleurs d'identification */
 
 .bleu-leger {
     background-color: lightblue;
@@ -24,9 +22,10 @@ body {
     background-color: gainsboro;
 }
 
-.conteneur {
-    width: 100%;
-    background-color: #fff;
+main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: pink;
 }
 
 /* La classe pour creer une rangée */
@@ -35,19 +34,7 @@ body {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; /* Sert a placer les éléments à la ligne pour que la largeur des colonnes soit respectée */
-    border: 2px solid peru;
     margin-bottom: 5px;
-}
-
-/* La class pour mettre les éléments les uns en dessous des autres */
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
-.centre {
-    justify-content: center;
 }
 
 /* la grille sur 12 colonnes et la définition de la largeur des colonnes */
@@ -146,18 +133,4 @@ body {
 }
 .marge-11 {
     margin-left: 91.666666%;
-}
-
-h1 {
-    background: url("../../img/dolomites-italie.jpg") no-repeat;
-    height: 250px;
-    line-height: 250px;
-    text-align: center;
-    width: 80%;
-}
-
-.transparent {
-    background-color: #fff;
-    opacity: 0.8;
-    border-radius: 5px;
 }
