@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #fff;
+    background-color: rgb(255, 254, 174);
 }
 
 /* Couleurs d'identification */
@@ -25,7 +25,6 @@ body {
 main {
     width: 800px;
     margin: 0 auto;
-    background-color: pink;
 }
 
 /* La classe pour creer une rangée */
@@ -134,3 +133,93 @@ main {
 .marge-11 {
     margin-left: 91.666666%;
 }
+
+/* Class pour les images adaptatives */
+.img-fluide {
+    width: 100%;
+}
+
+/* LES REGLES DE MEDIAS QUERIES POUR LE RESPONSIVE ET LES DIFFERENTS ECRANS */
+
+/* Pour les téléphones ou les smartphones */
+
+@media (max-width: 320px) {
+
+    .column-xs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-xs-12 {
+        width: 100%;
+    }
+
+    .marge-xs {
+        margin: 0 auto;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* Pour les petites tablettes et les smarphones grand écrans */
+
+@media (min-width: 321px) and (max-width: 767px) {
+
+    body {
+        background-color: rgb(241, 194, 194);
+    }
+
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* Pour les tablettes et certains ordinateur portable */
+
+@media (min-width: 768px) and (max-width: 1096px) {
+
+    body {
+        background-color: rgb(133, 183, 248);
+    }
+
+    main {
+        background-color: #fff;
+    }
+
+    .column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
+/* Pour les ordinateurs de bureau, les écrans plus grand que 1097px */
+
+@media (min-width: 1097px) {
+
+    body {
+        background-color: rgb(95, 248, 154);
+    }
+}
+
+
+
