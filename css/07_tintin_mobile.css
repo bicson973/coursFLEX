@@ -59,7 +59,7 @@ table {
 
 /* =================================== Responsive : Ecran inférieur à 600px =================================== */
 
-@media (min-width: 321px) and (max-width: 600px) {
+@media screen and (min-width: 321px) and (max-width: 600px) {
     * {
         box-sizing: border-box;
         margin: 0;
@@ -87,7 +87,7 @@ table {
     }
     
     header h1 {
-        font-size: 200%;
+        font-size: 100%;
         color: white;
         font-weight: bold;
         padding-top: 25px;
@@ -122,6 +122,10 @@ table {
         color: white;
     }
 }
+
+/* =================================== FIN Responsive : Ecran inférieur à 600px =================================== */
+
+
 
 
 
