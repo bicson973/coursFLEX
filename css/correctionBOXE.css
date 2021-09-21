@@ -57,9 +57,14 @@ table {
 
 /* FIN RESET ERIC MEYER  */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgb(0, 0, 0);
-    color: white;
 }
 
 /* =================================== Les parties auto-centrée =================================== */
@@ -67,13 +72,13 @@ body {
 header > div, main, footer > div {
     width: 1024px;
     margin: 0 auto;
-    background-color: gray;
+    padding: 20px 0;
 }
 
 /* =================================== En-tête de la page =================================== */
 
 header {
-    background-image: url(../../../img/background.jpg); /* l'image de la page se répète */
+    background-image: url(../img/background.jpg); /* l'image de la page se répète */
 }
 
 header > div {
@@ -81,7 +86,45 @@ header > div {
     justify-content: space-between;
 }
 
+header figcaption {
+    margin-top: 20px;
+}
+
+header figcaption span {
+    color: #ea9f06;
+}
+
+header p {
+    font-size: 110%;
+}
+
+/* La partie droite de l'en-tête */
+
+header figure+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+header nav a {
+    text-decoration: none;
+    padding-left: 50px;
+    font-weight: bold;
+}
+
 /* =================================== Contenu principal de la page =================================== */
+
+main {
+    padding-bottom: 0%;
+}
 
 main img {
     width: 100%;
@@ -90,7 +133,63 @@ main img {
 main section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 150px;
+    background-color: #fff;
 }
+
+main article {
+    position: relative;
+    margin: 50px auto;
+    width: 35%;
+}
+
+main article figure {
+    position: relative;
+    text-align: center;
+}
+
+main article figcaption {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+}
+
+main article div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main article a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background: linear-gradient(#212121,#9a9a9a);
+}
+
+/* Les prix des articles */
+
+.ancien-prix {
+    text-decoration: line-through;
+}
+
+.nouveau-prix {
+    color: #ea9f06;
+}
+
+.rabais {
+    position: absolute;
+    top: 25px;
+    right: 15px ;
+    padding: 4px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #ea9f06;
+    background-color: rgb(0, 0, 0);
+}
+
 
 /* =================================== Pied de la page =================================== */
 
@@ -108,10 +207,17 @@ footer nav {
     height: 50px;
     border-radius: 10px;
     position: relative;
-    bottom: 20px;
+    bottom: 50px;
 }
 
-footer nav div { /* Les cercles dans la nav */
+footer nav a {
+    color: #373737;
+    text-decoration: none;
+}
+
+
+
+footer nav div { /* Les cercles dans la seconde nav */
     background-color: rgb(204, 204, 204);
     width: 20px;
     height: 20px;
@@ -121,6 +227,35 @@ footer nav div { /* Les cercles dans la nav */
 footer section {
     display: flex;
     justify-content: space-between;
+}
+
+footer figure {
+    width: 20%;
+    text-align: center;
+}
+
+footer figure img {
+    padding-bottom: 20px;
+}
+
+
+footer figcaption, footer p {
+    font-size: small;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+}
+
+/* Partie réseaux sociaux */
+
+#reseaux {
+    justify-content: center;
+    margin: 30px;
+}
+
+#reseaux a {
+    display: inline-block;
+    margin: 0 50px;
 }
 
 
