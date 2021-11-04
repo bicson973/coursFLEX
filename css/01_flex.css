@@ -57,10 +57,11 @@ h1 {
     height: 50%;
 }
 
+.t-cap {
+   text-transform: uppercase; 
+}
+
 .h-75 {
     height: 75%;
 }
 
-.t-cap {
-   text-transform: uppercase; 
-}
